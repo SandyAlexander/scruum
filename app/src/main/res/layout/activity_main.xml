@@ -4,24 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1C2F8E">
+    android:background="#36366C">
 
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="365dp"
-        android:layout_height="80dp"
-        android:fontFamily="@font/lblack"
-        android:text="Agua Azul Premium"
-        android:textColor="#efb810"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView13"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.494" />
 
     <ImageView
         android:id="@+id/imageView13"
@@ -65,8 +49,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/boton_degradado"
-        android:text="PROVEEDOR"
         android:fontFamily="@font/lblack"
+        android:text="PROVEEDOR"
         android:textColor="#FFB810"
         android:textColorHighlight="#FF9800"
         android:textColorLink="#FF9800"
@@ -121,13 +105,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="227dp"
-        android:layout_height="167dp"
+        android:layout_width="267dp"
+        android:layout_height="208dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView13"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264"
+        app:layout_constraintVertical_bias="0.194"
         app:srcCompat="@drawable/logo" />
 
 
