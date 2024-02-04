@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">maps</string>
+=======
+    <string name="app_name">ScrumApp</string>
+>>>>>>> 2688e5fe726ccf50e720a8f8d5bc3b1e31ab8532
 </resources>

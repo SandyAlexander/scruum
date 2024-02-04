@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+<<<<<<< HEAD
     <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+=======
+>>>>>>> 2688e5fe726ccf50e720a8f8d5bc3b1e31ab8532
 
     <application
         android:allowBackup="true"
@@ -11,6 +14,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/Theme.Maps"
         tools:targetApi="31">
 
@@ -19,6 +23,12 @@
             android:value="@string/google_maps_key"/>
         <activity
             android:name=".Paginaprincipal"
+=======
+        android:theme="@style/Theme.ScrumApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+>>>>>>> 2688e5fe726ccf50e720a8f8d5bc3b1e31ab8532
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,6 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <!-- Agrega la siguiente línea para la actividad ProductDetailsActivity -->
         <activity android:name=".DetallesProductos" />
         <activity android:name=".CarritoCompras" />
@@ -47,6 +58,8 @@
             android:name=".ProvedorLogin">
         </activity>
 
+=======
+>>>>>>> 2688e5fe726ccf50e720a8f8d5bc3b1e31ab8532
     </application>
 
 </manifest>

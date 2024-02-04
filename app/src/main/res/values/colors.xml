@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+<<<<<<< HEAD
+=======
+    <color name="fondo_principal">#FFEB3B</color>
+>>>>>>> 2688e5fe726ccf50e720a8f8d5bc3b1e31ab8532
 </resources>
