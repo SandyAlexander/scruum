@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36366C"
+    tools:context=".ClienteLoginActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"
+        android:contentDescription="Logo"/>
+
+    <!-- Campo de correo y contraseña-->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lthin"
+        android:text="CLIENTES"
+        android:textColor="#E5E3E8"
+        android:layout_below="@+id/imageViewLogo"
+        android:textSize="40sp" />
+
+    <EditText
+        android:id="@+id/editTextCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#FFFFFF"
+        android:hint="Correo Electrónico"
+        android:padding="16dp"
+        android:textColorHint="#DDE5EC"
+        android:layout_below="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#DDE5EC"
+        android:padding="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_below="@+id/editTextCorreo"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón de Iniciar Sesión -->
+
+    <Button
+        android:id="@+id/btnIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextContraseña"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/boton_redondeado"
+        android:text="Iniciar Sesión"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Texto para Registarse -->
+    <TextView
+        android:id="@+id/txtRegistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes una cuenta? Regístrate"
+        android:textColor="#DDE5EC"
+        android:textSize="16sp"
+        android:layout_below="@+id/btnIniciarSesion"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+
+</RelativeLayout>

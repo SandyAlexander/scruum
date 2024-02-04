@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CatalogoActivity"
+    android:background="#36366C">
+
+    <ImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_width="40dp"
+        android:layout_height="34dp"
+        android:src="@drawable/ic_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp" />
+
+    <GridView
+        android:id="@+id/productGridView"
+        android:layout_width="357dp"
+        android:layout_height="635dp"
+        android:columnWidth="160dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:verticalSpacing="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/carrito"
+        android:layout_width="234dp"
+        android:layout_height="96dp"
+        app:layout_constraintBottom_toTopOf="@+id/productGridView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Catálogo de Productos"
+        android:textColor="#FF9800"
+        android:fontFamily="@font/lblack"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/productGridView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carrito" />
+
+    <ImageView
+        android:id="@+id/icnotificacion"
+        android:layout_width="48dp"
+        android:layout_height="54dp"
+        android:onClick="leernotificaciones"
+        android:contentDescription="Icono de notificación"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.015"
+        app:srcCompat="@drawable/notificacion" />
+
+    <TextView
+        android:id="@+id/notificacionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text=""
+        android:textStyle="bold"
+        android:textColor="#F62C2C"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/icnotificacion"
+        app:layout_constraintEnd_toEndOf="@+id/icnotificacion"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="@+id/icnotificacion"
+        app:layout_constraintTop_toTopOf="@id/icnotificacion"
+        app:layout_constraintVertical_bias="0.288" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

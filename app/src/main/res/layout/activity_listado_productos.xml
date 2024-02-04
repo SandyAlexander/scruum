@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36366C">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/lthin"
+        android:text="Listado de Productos"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp" />
+
+    <ListView
+        android:id="@+id/listViewProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView4"
+        android:layout_above="@id/btnAgregarNuevoProducto"
+        android:background="#36366C"
+        android:cacheColorHint="#00000000"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp"
+        android:listSelector="#36366C"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btnAgregarNuevoProducto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Agregar Nuevo Producto"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

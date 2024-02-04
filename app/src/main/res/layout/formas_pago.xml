@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C2F8E"
+    tools:context=".CatalogoActivity">
+
+    <Button
+        android:id="@+id/btnBankDeposit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Depósito Bancario"
+        android:background="#3498db"
+        android:textColor="#ffffff"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onPaymentMethodSelected"/>
+
+    <Button
+        android:id="@+id/btnCashOnDelivery"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pago Contra Entrega"
+        android:background="#27ae60"
+        android:textColor="#ffffff"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnBankDeposit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onPaymentMethodSelected"/>
+
+    <TextView
+        android:id="@+id/txtBankDepositDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnBankDeposit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtCashOnDeliveryDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ffffff"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnCashOnDelivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnPurchase"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Hacer Compra Ya"
+        android:background="#e74c3c"
+        android:textColor="#ffffff"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtCashOnDeliveryDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="onPurchaseClicked"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

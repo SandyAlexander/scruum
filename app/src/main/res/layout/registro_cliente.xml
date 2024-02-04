@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#36366C"
+    tools:context=".RegistroClienteActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Logo -->
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="270dp"
+            android:layout_height="131dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/logo" />
+ 
+        <!--Campos para el registro -->
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLogo"
+            android:layout_gravity="center"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/lthin"
+            android:text="REGISTRO"
+            android:textColor="#E5E3E8"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Nombre"
+            android:padding="16dp"
+            android:textColorHint="#DDE5EC" />
+
+        <EditText
+            android:id="@+id/editTextApellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#DDE5EC"
+            android:padding="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/editTextNombre"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextCedula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cédula"
+            android:inputType="number"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#DDE5EC"
+            android:padding="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/editTextApellido"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#DDE5EC"
+            android:padding="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/editTextCedula"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teléfono"
+            android:inputType="phone"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#DDE5EC"
+            android:padding="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/editTextDireccion"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo Electrónico"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="#FFFFFF"
+            android:textColorHint="#DDE5EC"
+            android:padding="16dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/editTextTelefono"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#DDE5EC"
+            android:padding="20dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_below="@+id/editTextCorreo"
+            android:layout_marginTop="16dp"/>
+
+
+        <EditText
+            android:id="@+id/editTextVerificarContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextContraseña"
+            android:padding="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#FFFFFF"
+            android:hint="Verificar Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="#DDE5EC" />
+
+        <!-- Botón de Registrarse -->
+        <Button
+            android:id="@+id/btnRegistarse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/boton_redondeado"
+            android:text="Registrarse"
+            android:textAllCaps="false"
+            android:layout_below="@+id/editTextVerificarContraseña"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</ScrollView>

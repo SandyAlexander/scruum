@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- boton_redondeado.xml -->
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <corners android:radius="20dp" /> <!-- Radio para redondear los bordes -->
+        <solid android:color="#133A94" /> <!-- Color de fondo del botón -->
+    </shape>
+

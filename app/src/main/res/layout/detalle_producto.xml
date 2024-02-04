@@ -1,0 +1,139 @@
+<!-- activity_product_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#36366C">
+
+    <FrameLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="195dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/esquinas_redondeadas">
+
+        <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="190dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/botella" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FF9800"
+        android:layout_below="@id/imageContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Descripción del producto -->
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción detallada del producto."
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/productNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- Precio del producto -->
+    <TextView
+        android:id="@+id/productDescriptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precio: $100"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_below="@id/productPriceTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Disponibilidad del producto -->
+    <TextView
+        android:id="@+id/availableQuantityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponibles: 10 unidades"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/productDescriptionTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+        <!-- Layout para la selección de cantidad -->
+    <LinearLayout
+        android:id="@+id/quantityLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/availableQuantityTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <!-- Botón de decremento -->
+        <Button
+            android:id="@+id/decrementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <!-- EditText para mostrar la cantidad -->
+        <EditText
+            android:id="@+id/quantityEditText"
+            android:layout_width="53dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:inputType="none"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <!-- Botón de incremento -->
+        <Button
+            android:id="@+id/incrementButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Botón "Agregar al carrito" -->
+    <Button
+        android:id="@+id/agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar al carrito"
+        android:layout_below="@id/quantityLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="agregarcarrito" />
+
+    <!-- Botón "Seguir Comprando" -->
+    <Button
+        android:id="@+id/continueShoppingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seguir Comprando"
+        android:layout_below="@id/agregar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="continueShopping" />
+
+</RelativeLayout>
